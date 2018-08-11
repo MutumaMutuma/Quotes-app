@@ -1,8 +1,8 @@
 <!-- <app-quote-form></app-quote-form> -->
   <ul>
-    <div *ngFor='let quote of quotes'>
+    <div *ngFor='let quote of quotes; let i = index'>
       <li >{{quote.quote}}</li>
-      <button class="btn btn-outline-primary btn-sm">More</button>
+      <button (click)='toogleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
      <app-quote-info [quote]='quote'></app-quote-info>
      
     </div>
