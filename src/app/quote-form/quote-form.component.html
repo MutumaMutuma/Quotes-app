@@ -1,18 +1,21 @@
 <div class="row">
   <div class="col-md-6">
-    <div class="forms">
-      <div class="form-group">
-        <label for="quote"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAoSmuOZBAyvjWCB6UnbWPmXLUa_UWNOaPEK23TiQPW30mUT-ag" height="60px">UOTE</label>
-        <input type="text" class="form-control" id="quote" placeholder="Enter Quote">
-      </div>
-
+    <form #quoteForm='ngForm'>
+        <div class="forms">
+            <div class="form-group">
+              <label for="quote"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAoSmuOZBAyvjWCB6UnbWPmXLUa_UWNOaPEK23TiQPW30mUT-ag" height="60px">UOTE</label>
+              <input type="text" class="form-control" id="quote"  placeholder="Enter Quote">
+            </div>
       
-
-      <div class="form-group">
-        <label for="exampleInputPassword1">Author</label>
-        <input type="text" class="form-control" id="author" placeholder="Author">
-      </div>
-    </div>
+            
+      
+            <div class="form-group">
+              <label for="exampleInputPassword1">Author</label>
+              <input type="text" class="form-control" id="author" placeholder="Author">
+            </div>
+          </div>
+        </form>
+    
     <button class="btn btn-outline-primary" type="button" name="button"> <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/telegram-app-logo-3894f3465c40509f-512x512.png" alt="send" height="20px"> Send Quote</button>
   </div>
 
