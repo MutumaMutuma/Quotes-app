@@ -7,12 +7,15 @@ import { Quote } from './../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-        new Quote(1, 'The Way Get Started Is To Quit Talking And Begin Doing.', 'Walt Disney'),
-        new Quote(2, 'People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.' , 'Saidi Hussein'),
-        new Quote(3, 'We May Encounter Many Defeats But We Must Not Be Defeated.', 'Elsie Herra'),
-        new Quote(4, 'Love yourself. It is important to stay positive because beauty comes from the inside out.', 'Lewis Mutuma'),
+        new Quote(1, 'The Way Get Started Is To Quit Talking And Begin Doing.', 'Walt Disney', 'Lewis Mutuma' , 0,  0 ),
+        new Quote(2, 'People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.' , ' James Graham', 'Saidi Hussein', 0, 0),
+        new Quote(3, 'We May Encounter Many Defeats But We Must Not Be Defeated.', 'Ali Caldwell', 'Elsie Herra', 0, 0),
+        new Quote(4, 'Love yourself. It is important to stay positive because beauty comes from the inside out.', 'Leah Jenea', 'Lewis Mutuma', 0, 0),
 
     ];
+    newQuote(quote) {
+      this.quotes.push(quote)
+    }
   constructor() { }
 
   ngOnInit() {

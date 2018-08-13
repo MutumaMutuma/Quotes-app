@@ -7,6 +7,15 @@ import { Quote } from '../quote';
 })
 export class QuoteInfoComponent implements OnInit {
   
+  upVote() {
+    this.quote.upVotes ++
+    let count : number=5;
+  }
+
+  downVote() {
+    this.quote.downVotes ++
+    let quote : number=5;
+  }
 @Input() quote: Quote;
   constructor() { }
   @Output() isComplete= new EventEmitter<boolean>();

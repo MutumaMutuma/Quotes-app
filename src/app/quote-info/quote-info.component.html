@@ -1,4 +1,4 @@
 <p>{{quote.name}}</p>
-<h4> <button class="btn btn-outline-success">  <i class="fa fa-thumbs-up"></i>  </button> 
-    <button class="btn btn-outline-warning"> <i class="fa fa-thumbs-down"></i> </button> </h4>
+<h4> <button (click)='upVote()' class="btn btn-outline-success">  <i class="fa fa-thumbs-up"></i>  {{quote.upVotes}} </button> 
+    <button (click)='downVote()' class="btn btn-outline-warning"> <i class="fa fa-thumbs-down"></i>  {{quote.downVotes}} </button> </h4>
 <button (click) = 'quoteDelete(true)' class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i> Delete Quote</button>
