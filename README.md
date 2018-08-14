@@ -1,29 +1,47 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+ #### Due 14 August 2018
 
-## Development server
+ #### By **Lewis Mutuma**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ ## Description
 
-## Code scaffolding
+ * Quotes is a web application built using Angular 6 application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ The applications allows users to do the following:
 
-## Build
+ * Create a new quote
+ * Upvote or downvote a quote
+ * See the number of upvotes and number of downvotes for each quote
+ * See created by
+ * And also Delete a quote
+ *Here is a live link to <a href="https://mutumamutuma.github.io/Quotes-app/">Click here</a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ ## Setup/Installation Requirements
 
-## Running unit tests
+ * Make sure you have node,npm, tsc and watchman installed in your computer or desktop.
+ * Clone from Github my app in my Github account **MutumaMutuma**.
+ * Run ng serve for a development server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+ * You can contact me for more information
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+ ## Known Bugs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ The application submits blank form and adds empty quote details to the quotes list.
+ Cannot run without Google Chrome browser
 
-## Further help
+ ## Support and contact details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Quotes
-# Quotes-app
+ Incase of any inconviences, Issues, comments and feedback you can contact me on <a href="lewismutuma1000@gmail.com"> Click here to e-mail me</a>
+
+ ## Technologies Used
+
+ * Angular 6
+ * HTML 
+ * CSS
+
+ ### License
+
+ *This software is Licensed under the MIT License.*
+
+ Copyright (c) 2018 **MutumaMutuma**

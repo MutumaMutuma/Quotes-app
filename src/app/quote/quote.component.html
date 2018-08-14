@@ -1,10 +1,10 @@
 <!-- <app-quote-form></app-quote-form> -->
   <ul>
     <div *ngFor='let quote of quotes; let i = index'>
-      <li >{{quote.quote}}</li>
+      <li  >{{quote.quote}}</li>
       <button (click)='toogleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
       <!--  -->
-     <app-quote-info *ngIf="quote.showInfo" [quote]='quote'></app-quote-info>
+     <app-quote-info style="background-color: rgba(121, 224, 224, 0.089)" *ngIf="quote.showInfo" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-info>
      
     </div>
   </ul>
