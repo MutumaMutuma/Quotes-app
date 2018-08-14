@@ -14,8 +14,7 @@
  * Upvote or downvote a quote
  * See the number of upvotes and number of downvotes for each quote
  * See created by
- * And also Delete a quote
- *Here is a live link to <a href="https://mutumamutuma.github.io/Quotes-app/">Click here</a>
+ * And also Delete a quote <strong> Here is a live link to <a href="https://mutumamutuma.github.io/Quotes-app/">Click here</a> </strong>
 
  ## Setup/Installation Requirements
 
