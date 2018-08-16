@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteInfoComponent } from './quote-info/quote-info.component';
+import { MovingComponent } from './moving/moving.component';
+import { DateCountPipe } from './date-count.pipe';
+// import { StopComponent } from './stop/stop.component';
 // import { NgbNodule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -12,7 +15,10 @@ import { QuoteInfoComponent } from './quote-info/quote-info.component';
     AppComponent,
     QuoteFormComponent,
     QuoteComponent,
-    QuoteInfoComponent
+    QuoteInfoComponent,
+    MovingComponent,
+    DateCountPipe,
+    // StopComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
 <div style="width: 550px; background-color: rgba(127, 255, 212, 0.349);" >
 
   <p>{{quote.name}}</p>
+  <p>This Quote was posted  {{quote.postDate|dateCount}} days ago.</p>
   <h4> <button (click)='upVote()' class="btn btn-outline-success">  <i class="fa fa-thumbs-up"></i><span class="badge badge-light"> {{quote.upVotes}} </span></button> 
-      <button (click)='downVote()' class="btn btn-outline-warning"> <i class="fa fa-thumbs-down"></i> <span class="badge badge-light"> {{quote.downVotes}} </span></button> </h4>
+       <button (click)='downVote()' class="btn btn-outline-warning"> <i class="fa fa-thumbs-down"></i> <span class="badge badge-light"> {{quote.downVotes}} </span></button> </h4>
   <button (click) = 'quoteDelete(true)' class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i> Delete Quote</button>
   
 </div>

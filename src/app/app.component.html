@@ -1,12 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    <img width="300" alt="Anotherone" src="http://www.margaretfrazer.com/images-wordpress/logo-quotes.png">
-  </h1>
+  <app-moving>
+    <!-- <img width="300" alt="Anotherone" src="http://www.margaretfrazer.com/images-wordpress/logo-quotes.png"> -->
+  </app-moving>
+  <hr>
 </div>
-<div class="container-fluid">
-  <!-- <ul>
-  <app-quote></app-quote>
-  </ul> -->
-   <app-quote-form></app-quote-form>
+<!-- <div class="container-fluid"> -->
+<div class="row">
+  <div col-md-6>
+    <app-quote-form (inputQuote)="pushQuote($event)"></app-quote-form>
+  </div>
+  <div class="col-md-6">
+    
+      <app-quote [quotes]='quotes'></app-quote>
+    
+  </div>
 </div>
+ 
+  
+<!-- </div> -->

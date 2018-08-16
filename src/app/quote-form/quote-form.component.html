@@ -1,27 +1,28 @@
 <div class="row">
-  <div class="col-md-6 col-sm-6 col-lg-6">
-    <form (ngSubmit)='submitform()' #quoteForm='ngForm'>
+  <div class="col-md-6">
+    <form (ngSubmit)='submitForm()'>
         <div class="forms">
             <div class="form-group">
-              <label for="quote"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAoSmuOZBAyvjWCB6UnbWPmXLUa_UWNOaPEK23TiQPW30mUT-ag" height="60px">UOTE</label>
-              <input  type="text" class="form-control"  placeholder="Enter Quote">
+              <label for="quote">QUOTE</label>
+              <input  type="text" name="user" [(ngModel)]="this.newQuote.quote" class="form-control"  placeholder="Enter Quote">
             </div>
       
             <div class="form-group">
               <label for="exampleInputPassword1">Author</label>
-              <input type="text" class="form-control"  id="author" placeholder="Author">
+              <input type="text" class="form-control" [(ngModel)]="this.newQuote.author" name="author" id="author" placeholder="Author">
             </div>
           </div>
+          <button class="btn btn-outline-primary" id="submit" type="submit" name="button">  <i class="fa fa-telegram"></i> Send Quote</button>
+
         </form>
     
-    <button class="btn btn-outline-primary" id="submit" type="button" name="button"> <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/telegram-app-logo-3894f3465c40509f-512x512.png" alt="send" height="20px"> Send Quote</button>
   </div>
 
-  <div class="col-md-6 col-sm-6 col-lg-6">
+  <div class="col-md-6">
 
-<ul>
-<app-quote></app-quote>
-</ul>
+    <app-quote [quotes]='quotes'></app-quote>
 
   </div>
+  
 </div>
+<app-moving></app-moving>

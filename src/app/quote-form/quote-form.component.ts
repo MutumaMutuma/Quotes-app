@@ -9,11 +9,11 @@ import { isComponent } from '@angular/core/src/render3/instructions';
 })
 export class QuoteFormComponent implements OnInit {  
   @Input() quote: Quote;
-  @Output() newquote = new EventEmitter<Quote>();
+  @Output() inputQuote = new EventEmitter<Quote>();
 
-  newQuote = new Quote(0,'', '', '', 0, 0);
-  submitform(){
-    this.newquote.emit(this.newQuote);
+  newQuote = new Quote(0,'', '',new Date(0,0,0), 0, 0);
+  submitForm(){
+    this.inputQuote.emit(this.newQuote);
   }
   constructor() { }
   
