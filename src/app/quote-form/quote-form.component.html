@@ -9,7 +9,7 @@
       
             <div class="form-group">
               <label for="exampleInputPassword1">Author</label>
-              <input type="text" class="form-control" [(ngModel)]="this.newQuote.author" name="author" id="author" placeholder="Author">
+              <input type="text" class="form-control" name="author" id="author" placeholder="Author">
             </div>
           </div>
           <button class="btn btn-outline-primary" id="submit" type="submit" name="button">  <i class="fa fa-telegram"></i> Send Quote</button>
@@ -20,7 +20,7 @@
 
   <div class="col-md-6">
 
-    <app-quote [quotes]='quotes'></app-quote>
+    <app-quote ></app-quote>
 
   </div>
   
